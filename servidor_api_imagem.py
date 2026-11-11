@@ -1,3 +1,11 @@
+import base64
+import io
+import numpy as np
+import requests
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+from PIL import Image
+
 # 1) Cria a aplicacao. Ela e o "servidor" em si.
 app = FastAPI()
 
